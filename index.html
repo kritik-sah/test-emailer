@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet">
+    <!-- styling of this document -->
+    <style>
+        
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Roboto', sans-serif;
+        }
+        :root{
+            --pink: #ffe0d8;
+            --red: #ed1c24;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .spacer{
+            height: 50px;
+        }
+        .text-red{
+            color: var(--red);
+        }
+        /* first section start */
+        .first-sec{
+            background-color: var(--pink);
+        }
+        .first-heading{
+            color: var(--red);
+            width: 70%;
+            margin: auto;
+            padding: 3rem;
+        }
+        .ctapara{
+            width: 70%;
+            margin: 0rem auto 2rem auto !important;
+        }
+        .ctapara p .btn{
+            position: relative;
+            z-index: 1;
+            border-radius: 10px;
+            background-color: green;
+            color: white;
+            padding: 10px; 
+        }
+        .desc-table{
+            text-align: center;
+            background-image: url(./img/table.png);
+            background-repeat:no-repeat ;
+            background-position: center center;
+        }
+        #table1{
+            text-shadow: 0px 0px 5px black;
+            margin: 2px auto 2px auto;
+        }
+        #table2{
+            text-shadow: 0px 0px 2px rgb(255, 195, 32);
+        }
+        .checkbox-sec{
+            background: url(/img/checkboxsec.png) no-repeat center center;
+            background-size: cover;
+            position: relative;
+            top: -3rem;
+            height: 550px;
+            width: 100%;
+            margin: auto;
+        }
+        .button-cta{
+            margin-top: -5rem;
+            padding-bottom: 3rem;
+        }
+        .btn-danger{
+            background-color: var(--red);
+        }
+        /* first section end */
+
+        /* second section start */
+
+        .mycard{
+            background-color: white;
+            height:auto;
+            padding: 1rem;
+            
+        }
+
+        /* second section end */
+
+        /* for desktop view */
+        @media (min-width:1025px){
+        .spacer{
+            height: 7rem;
+        }
+        .first-heading{
+            
+            width: 45%;
+            
+        }
+        .ctapara{
+            width: 50%;
+            margin: 0rem auto 3rem auto !important;
+        }
+        .checkbox-sec{
+            background: url(/img/checkboxsec.png) no-repeat center center;
+            background-size: cover;
+            position: relative;
+            top: -3rem;
+            height: 900px;
+            width: 100%;
+            margin: auto;
+        }
+
+
+        }
+    </style>
+</head>
+<body>
+        <!-- header with logo section start -->
+    <header>
+    <nav class="navbar bg-white">
+        <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link m-2" aria-current="page" href="#">
+                  <img src="./img/logo.png" alt="Kotak 811">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+    <!-- header with logo Section End -->
+
+    <!-- start of our first section -->
+    <div class="container-fluid first-sec">
+
+        <h1 class="text-center first-heading">
+            Make 2021 your year of great investments
+        </h1>
+
+        <div class="bg-white rounded-pill ctapara">
+            <p class="text-center ">
+                Upgrade to the <span class="btn"><strong>Trade free plan</strong></span> by Kotak Securities
+            </p>
+        </div>
+        
+        <!-- start of golden table -->
+        <div class="desc-table p-1">
+            <div>
+                <h2 id="table1" class="text-white">
+                    Shuru kare 2021
+                </h2>
+            </div>
+            <div>
+                <h2 id="table2" class="text-red">
+                    with Kotak 811
+                </h2>
+            </div>
+
+        </div>
+        <!-- end of golden table -->
+
+        <div class="checkbox-sec">
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="container m-5">
+               <div class="p-1 m-1">
+                   <img src="img/check.png" alt="check image"> 
+                   <h3 class="d-inline-block pt-3">Savings Account</h3>
+               </div>
+               
+               <div class="p-1 m-1">
+                   <img src="img/check.png" alt="check image"> 
+                   <h3 class="d-inline-block pt-3">Demat Account</h3>
+               </div>
+
+               <div class="p-1 m-1">
+                   <img src="img/check.png" alt="check image"> 
+                   <h3 class="d-inline-block pt-3">Trading Account</h3>
+               </div>
+               <div class="spacer"></div>
+               <div class="spacer"></div>
+               <div class="spacer"></div>
+               
+
+            </div>
+        </div>
+                <!-- call to action button starts -->
+                 <div class="text-center button-cta">
+                     <a class="btn btn-danger btn-lg rounded-pill ps-4 pe-4 shadow-sm" href="https://www.youtube.com/channel/UCh7-f_QrD7WcQcu62CixiHQ" target="_blank" rel="noopener noreferrer">
+                        Upgrade Now
+                    </a>
+                </div>
+                <!-- call to action button ends -->
+
+    </div>
+    <!-- end of our first section -->
+
+    <!-- start of second section -->
+
+    <section class="container-fluid">
+
+        <div class="container p-4">
+
+            <article>
+                <p>
+                    Hi fn,ln 
+                    <br/>
+                    Are you keen on exploring new horizons when it comes to investing? Look no further and open a Kotak Trinity Account (Savings+Demat+Trading) and start trading with the Trade Free Plan by Kotak Securities.
+                </p>
+            </article>
+
+            <hr/>
+
+            <div class="p-2 text-center">
+                <h2>Your Trinity Account and Trade Free Plan
+                <br/>
+                <span class="text-red"> come with a host of benefits:</span></h2>
+            </div>
+            <!-- listing offers -->
+            <!-- first row of offers start -->
+            <div class="d-flex justify-content-center">
+
+                <div class="mycard rounded">
+                    <img class="d-block m-auto p-2" src="img/money-hand.png" alt="Zero Brokerage on Intraday trades">
+                    <h4 class="text-center m-2">
+                        Zero Brokerage on
+                        <br/>
+                        Intraday trades
+                    </h4>
+                </div>
+
+                <hr style="width: 2px; height: 160px; display: inline-block;">
+                
+                <div class="mycard rounded">
+                    <img class="d-block m-auto p-2" src="img/rising-stocks.png" alt="All other F&O orders at ₹20/- ">
+                    <h4 class="text-center m-2">
+                        All other F&O
+                        <br/>
+                        orders at ₹20/-
+                    </h4>
+                </div>
+                
+                <hr style="width: 2px; height: 160px; display: inline-block;">
+
+                <div class="mycard rounded">
+                    <img class="d-block m-auto p-2" src="img/clock.png" alt="Start trading in 60 minutes">
+                    <h4 class="text-center m-2">
+                        Start trading in  
+                        <br/>
+                        60 minutes
+                    </h4>
+                </div>
+            </div>
+            <!-- first row of offers ends -->
+
+
+            <!-- second row of offers starts -->
+            <div class="d-flex justify-content-center">
+
+                <div class="mycard rounded">
+                    <img class="d-block m-auto p-2" src="img/verified.png" alt="Guaranteed customer satisfaction">
+                    <h4 class="text-center m-2">
+                        Guaranteed customer
+                        <br/>
+                        satisfaction
+                    </h4>
+                </div>
+
+                <hr style="width: 2px; height: 160px; display: inline-block;">
+
+                <div class="mycard rounded">
+                    <img class="d-block m-auto p-2" src="img/money-hand.png" alt="No upper limit on fund transfers made in one single day ">
+                    <h4 class="text-center m-2">
+                        No upper limit on 
+                        <br/>
+                        fund transfers made
+                        <br/>
+                        in one single day
+                    </h4>
+                </div>
+
+            </div>
+            <!-- second row of offers ends -->
+
+            <!-- listing offer ends -->
+            
+            <div class="spacer"></div>
+
+            <!-- start of golden table -->
+            <div class="desc-table p-1">
+            <div>
+                <h2 id="table1" class="text-white">
+                    Shuru kare 2021
+                </h2>
+            </div>
+            <div>
+                <h2 id="table2" class="text-red">
+                    with Kotak 811
+                </h2>
+            </div>
+
+            </div>
+            <!-- end of golden table -->
+
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+           
+
+            <!-- call to action button starts -->
+            <div class="text-center button-cta">
+                <a class="btn btn-danger btn-lg rounded-pill ps-4 pe-4 shadow-sm" href="https://www.youtube.com/channel/UCh7-f_QrD7WcQcu62CixiHQ" target="_blank" rel="noopener noreferrer">
+                   Upgrade Now
+               </a>
+           </div>
+           <!-- call to action button ends -->
+
+        </div>
+
+        
+        <div class="container">
+            <!-- t&c section starts -->
+            <div class="d-flex justify-content-between">
+            <div class="">
+                <h4>
+                    Warm Regards,  
+                    <br/>
+                    Team Kotak Mahindra Bank
+                </h4>
+            </div>
+            <div class="mt-4">
+                <p>
+                    <a  href="#" target="_blank" rel="noopener noreferrer">T&C Apply</a>
+                </p>
+            </div>
+        </div>
+            <!-- t&c section ends -->
+
+        <hr/>
+
+        <!-- links socials section starts -->
+        <div class="d-flex justify-content-between">
+            <div class="">
+                <nav class="nav">
+                    <a href="#" target="_blank" rel="noopener noreferrer"><u>Copyright & Disclaimer</u></a> 
+                    &nbsp; | &nbsp;
+                    <a href="#" target="_blank" rel="noopener noreferrer"><u>Privacy Policy</u></a>
+                  </nav>
+            </div>
+            <div class="">
+                <nav class="nav">
+
+                    <a class="me-1" href="#"><img src="img/facebook.png" alt="Follow us on facebook"></a>
+                    <a class="me-1" href="#"><img src="img/twitter.png" alt="Follow us on twitter"></a>
+                    <a class="" href="#"><img src="img/youtube.png" alt="Subscribe us on YouTube"></a>
+                     
+                  </nav>
+            </div>
+        </div>
+            <!-- links socials section ends -->
+        
+            <article>
+                <p class="text-center p-2">
+                    
+                    Please do not reply to this mail as this is an automated mail service.
+                   
+                    In case you do not wish to receive any further marketing e-mails on your CRN ending with XXXX,
+                   
+                    please click here to <a href="#" target="_blank" rel="noopener noreferrer">unsubscribe</a> .
+
+                </p>
+            </article>
+
+
+        </div>
+
+
+    </section>
+
+</body>
+</html>
